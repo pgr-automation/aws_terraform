@@ -276,7 +276,7 @@ An IAM policy that allows a user to list all buckets and read objects in a speci
    ]
 }
 
-
+```
 ## 2. Bucket Policies
 
 ### Description
@@ -304,7 +304,7 @@ A bucket policy that allows another AWS account to read objects from your bucket
        }
    ]
 }
-
+```
 ## Access Control Lists (ACLs) in AWS S3
 
 
