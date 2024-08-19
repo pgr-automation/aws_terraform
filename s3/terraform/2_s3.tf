@@ -1,9 +1,10 @@
 #Create bucket
 resource "aws_s3_bucket" "demo_bucket" {
-    bucket = "pgr-automation-143"
+  count = 10
+    bucket = "pgr-automation-143-${count.index}"
     
     tags = {
-      Name = "pgr-automation-143"
+      Name = "pgr-automation-143-${count.index}"
       Environment = "Dev"
     }
 }
