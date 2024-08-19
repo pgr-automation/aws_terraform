@@ -33,3 +33,4 @@ EBS is designed for low-latency, high-throughput performance. With io2/io1 volum
 - **Creating Snapshots**: Snapshots are incremental backups, meaning only the data that has changed since the last snapshot is saved, reducing storage costs.
 
 For more detailed information, refer to the [AWS EBS Documentation](https://docs.aws.amazon.com/ebs).
+
