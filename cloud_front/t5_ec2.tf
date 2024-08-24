@@ -10,11 +10,12 @@ resource "aws_instance" "cf-instances" {
   user_data = file("${path.module}/data.sh")
 
   # Distribute instances across subnets using the element function
-  subnet_id = element(local.for_each, count.index % length(local.for_each))
+  subnet_id = element(local.for_each, count.index % length(local.for_each)) 
 
   vpc_security_group_ids = [aws_security_group.cf-sg.id]
 
   tags = {
     Name = "webserv10${count.index + 2}"
+    Env = "Dev"
   }
 }
